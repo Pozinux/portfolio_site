@@ -11,7 +11,8 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-from portfolio_project.settings_secret import SECRET_KEY #  La clé SECRETE est maintenant dans settings_secret.py pour ne pas être synchronisée avec github
+#  La clé SECRETE est maintenant dans settings_secret.py pour ne pas être synchronisée avec github
+from portfolio_project.settings_secret import SECRET_KEY
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -19,9 +20,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'XXXX'  # Voir le fichier settings.py
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
