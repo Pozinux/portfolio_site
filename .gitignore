@@ -1,6 +1,5 @@
 # My Project #
 settings_secret.py
-.idea
 
 # Django #
 *.log
