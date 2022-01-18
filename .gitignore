@@ -1,6 +1,7 @@
 # My Project #
 settings_secret.py
 static
+local_settings
 
 # Django #
 *.log
