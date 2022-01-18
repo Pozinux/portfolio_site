@@ -1,6 +1,15 @@
-<h3>HOME PAGE ACTIVITIES APP</h3>
+<h3>HOME PAGE</h3>
         
 <!--<p>{{ projects }}</p>-->
+
+<!-- Dès que l'on souhaite charger des fichiers statics il faut faire cette commande django -->
+{% load static %} 
+
+<a href="{% static 'portfolio_app_static/test.pdf' %}">TEST PDF</a>
+<br>
+<img src="{% static 'portfolio_app_static/image_foret.png' %}">
+
+
         
 <p>{% for project in projects %}
   <br>

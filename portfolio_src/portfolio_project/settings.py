@@ -125,7 +125,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static")
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
-# Charger les local settings :
+# Charger les local settings (ils écraseront les settings settés avant cette ligne comme le DEBUG) :
 try:
     from .local_settings import *
 except ImportError:
