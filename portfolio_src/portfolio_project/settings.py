@@ -22,11 +22,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = ['pozinux.pythonanywhere.com', 'www.pozinux.pythonanywhere.com', '127.0.0.1']
-
 
 # Application definition
 
@@ -124,3 +119,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+# Charger les local settings :
+try:
+    from .local_settings import *
+except ImportError:
+    print("Looks like no local file. You must be on production server.")
