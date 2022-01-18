@@ -1,0 +1,16 @@
+<h3>HOME PAGE ACTIVITIES APP</h3>
+        
+<!--<p>{{ projects }}</p>-->
+        
+<p>{% for project in projects %}
+  <br>
+  {{ project }}       
+{% endfor %}</p>       
+        
+{% for project in projects %}       
+  <p><b>{{ project.title }}</b></p>
+  <p><i>{{ project.description }}</i></p>
+  <p>{{ project.image }}</p>       
+  <p >{{ project.image.url }}</p>       
+ <img src="{{ project.image.url }}">
+{% endfor %}
